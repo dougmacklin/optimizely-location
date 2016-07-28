@@ -23,7 +23,7 @@ This should return an object with location data. If it is `null`, please ensure 
 
 ## Usage
 
-Install from [npm](https://www.npmjs.com/package/optimizely-location), or download and add [optimizely-location.js](https://github.com/dougmacklin/optimizely-location/blob/master/dist/optimizely-location.js) after your Optimizely snippet `<script src="js/optimizely-location.js">`
+Install from [npm](https://www.npmjs.com/package/optimizely-location), or add [optimizely-location.js](https://github.com/dougmacklin/optimizely-location/blob/master/dist/optimizely-location.js) after your Optimizely snippet
 
 ```
 npm install optimizely-location --save
