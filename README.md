@@ -29,7 +29,7 @@ Install from [npm](https://www.npmjs.com/package/optimizely-location), or add [o
 npm install optimizely-location --save
 ```
 
-This script assigns a Promise called `optimizelyLocation` to the global scope that will resolve when the user's location is ready. First import the script:
+This script assigns a Promise called `optimizelyLocation` to the global scope that will resolve when the user's location is ready. If you installed from npm, import the script:
 
 ```
 import optimizelyLocation from 'optimizely-location';
