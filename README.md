@@ -41,3 +41,5 @@ optimizelyLocation.then((res) => {
   console.log(res); // will log something like {continent: "NA", country: "US", region: "CA", city: "SANFRANCISCO"}
 });
 ```
+
+This promise will try to find the user location in intervals of 100 milliseconds for 3 seconds before rejecting.
