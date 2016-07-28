@@ -7,12 +7,22 @@ window.optimizelyLocation = new Promise((resolve, reject) => {
 
   // otherwise check every 100 milliseconds
   else {
+    var counter = 0;
+    
     var timer = setInterval(() => {
       var userLocation = optimizely.data.visitor.location;
+
       if (typeof userLocation !== "undefined") {
         clearInterval(timer);
         resolve(userLocation);
       }
+
+      else if (counter >= 30) {
+        clearInterval(timer);
+        reject('location null');
+      }
+
+      counter++;
     }, 100);
   }
 });
