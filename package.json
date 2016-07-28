@@ -1,7 +1,7 @@
 {
   "name": "optimizely-location",
   "version": "0.0.1",
-  "description": "Ensure that optimzely.data.visitor.location is ready before attempting to access it",
+  "description": "Use Optimizely to determine site-visitor geolocation",
   "author": "Doug Macklin <doug.macklin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
