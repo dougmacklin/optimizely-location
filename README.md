@@ -1,9 +1,9 @@
-# Optimizely Location Promise
+# Optimizely Location
 
 ## Usage
 
 ```js
-optimizelyLocationPromise.then((res) => {
+optimizelyLocation.then((res) => {
   console.log(res);
 });
 ```
