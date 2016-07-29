@@ -16,7 +16,7 @@ Note, by setting the URL Targeting to null, you are ensuring that the experiment
 You can check to see if location is now enabled by inspecting element on your site and typing the following into the Console:
 
 ```
-optimizely.data.visitor.location
+window.optimizely.data.visitor.location
 ```
 
 This should return an object with location data. If it is `null`, please ensure that you have followed the above steps correctly.
@@ -38,10 +38,10 @@ import optimizelyLocation from 'optimizely-location';
 Then wrap your location-based code in the Promise `.then()` syntax
 
 ```js
-optimizelyLocation.then((res) => {
+window.optimizelyLocation.then((res) => {
   // your user-location based code, eg:
   console.log(res); // will log something like {continent: "NA", country: "US", region: "CA", city: "SANFRANCISCO"}
 });
 ```
 
-This promise will try to find the user location in intervals of 100 milliseconds for 3 seconds before rejecting.
+This promise will try to find the user location in intervals of 100 milliseconds for 2 seconds before rejecting.

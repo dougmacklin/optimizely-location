@@ -17,7 +17,7 @@ window.optimizelyLocation = new Promise((resolve, reject) => {
         resolve(userLocation);
       }
 
-      else if (counter >= 30) {
+      else if (counter >= 20) {
         clearInterval(timer);
         reject('location null');
       }

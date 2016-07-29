@@ -1,6 +1,6 @@
 {
   "name": "optimizely-location",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Use Optimizely to determine site-visitor geolocation",
   "author": "Doug Macklin <doug.macklin@gmail.com>",
   "license": "MIT",
